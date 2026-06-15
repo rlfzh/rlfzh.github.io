@@ -10,6 +10,10 @@ This repository is intended to serve `https://rlfzh.github.io/`.
 - Demo video links
 - Publications
 
+## CV
+
+- Web CV link: <https://rlfzh.github.io/assets/cv_ghilmo_choi.pdf>
+
 ## Project Links
 
 - On-device VLM-based robotic mission execution

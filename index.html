@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ghilmo Choi</title>
-  <meta name="description" content="Portfolio of Ghilmo Choi: autonomous driving, robotic mission execution, and machine learning projects.">
+  <meta name="description" content="Portfolio of Ghilmo Choi: autonomous driving, robotic perception, and vision-language models.">
   <style>
     :root {
       --bg: #f7f8fa;
@@ -16,9 +16,7 @@
       --card: #ffffff;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -28,14 +26,8 @@
       line-height: 1.55;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     .page {
       width: min(1040px, calc(100% - 40px));
@@ -76,12 +68,10 @@
       font-size: 1.05rem;
     }
 
-    p {
-      margin: 0;
-    }
+    p { margin: 0; }
 
     .intro {
-      max-width: 760px;
+      max-width: 780px;
       color: var(--muted);
       font-size: 1.05rem;
     }
@@ -117,10 +107,7 @@
       padding-top: 34px;
     }
 
-    .section {
-      display: grid;
-      gap: 14px;
-    }
+    .section { display: grid; gap: 14px; }
 
     .grid {
       display: grid;
@@ -157,10 +144,7 @@
       font-weight: 650;
     }
 
-    .list {
-      display: grid;
-      gap: 10px;
-    }
+    .list { display: grid; gap: 10px; }
 
     .row {
       display: grid;
@@ -170,9 +154,7 @@
       border-top: 1px solid var(--line);
     }
 
-    .row:first-child {
-      border-top: 0;
-    }
+    .row:first-child { border-top: 0; }
 
     .row .date {
       color: var(--muted);
@@ -188,14 +170,8 @@
     }
 
     @media (max-width: 800px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .row {
-        grid-template-columns: 1fr;
-        gap: 4px;
-      }
+      .grid { grid-template-columns: 1fr; }
+      .row { grid-template-columns: 1fr; gap: 4px; }
     }
   </style>
 </head>
@@ -205,9 +181,9 @@
       <div class="eyebrow">Autonomous Driving / Robotic Perception / Vision-Language Models</div>
       <h1>Ghilmo Choi</h1>
       <p class="intro">
-        Undergraduate student in Mechanical Engineering at Korea Aerospace University.
-        My work focuses on real-robot autonomous driving systems, on-device vision-language
-        models for robotic mission execution, and perception-to-decision pipelines.
+        I am an undergraduate student in Mechanical Engineering at Korea Aerospace University,
+        expected to graduate in February 2027. My work focuses on connecting perception,
+        localization, planning, and decision making on real autonomous driving and mobile robot platforms.
       </p>
       <div class="links">
         <a class="button primary" href="assets/cv_ghilmo_choi.pdf">CV</a>
@@ -222,15 +198,15 @@
         <div class="grid">
           <div class="card">
             <h3>Vision-Language-Action Models</h3>
-            <p>Natural-language mission execution, visual grounding, hallucination-aware task planning, and real-robot action execution.</p>
+            <p>Natural-language mission execution, visual grounding, hallucination-aware planning, and real-robot language-to-action execution.</p>
           </div>
           <div class="card">
             <h3>Autonomous Driving Decision Making</h3>
-            <p>Perception, prediction, finite-state-machine-based behavior decision, and closed-loop vehicle autonomy.</p>
+            <p>Vision/LiDAR-based scene understanding, finite-state-machine-based behavior decision, and closed-loop autonomous driving validation.</p>
           </div>
           <div class="card">
             <h3>Robotic Perception and Localization</h3>
-            <p>Multi-sensor localization, visual SLAM, LiDAR SLAM, and scene representation for mobile robots.</p>
+            <p>Multi-sensor localization, visual SLAM, LiDAR SLAM, and structured scene representation for mobile robots.</p>
           </div>
         </div>
       </section>
@@ -241,8 +217,14 @@
           <article class="card">
             <h3>On-device VLM-based Robotic Mission Execution</h3>
             <p>
-              Developed a natural-language mission execution framework that converts user
-              commands into executable robot behaviors on a Traxxas TRX-4 and UGV platform.
+              As an undergraduate researcher at ASOL, I developed a natural-language mission
+              execution framework that converts user commands into executable robot behaviors
+              on a Traxxas TRX-4 UGV platform.
+            </p>
+            <p>
+              The system combines an on-device VLM planner, Actor-Guard-Critic validation,
+              RTAB-Map-based visual SLAM, object detection, structured world states, and
+              ROS2/Nav2 control for real-robot language-to-motion execution.
             </p>
             <div class="tags">
               <span class="tag">VLM</span>
@@ -252,7 +234,7 @@
             </div>
             <p>
               <a href="https://github.com/LeeSeungGyu1026/VlmRobotPlanner">Reference code</a>
-              <span> · </span>
+              <span> | </span>
               <a href="#demos">Demo links pending</a>
             </p>
           </article>
@@ -260,8 +242,14 @@
           <article class="card">
             <h3>ERP42 Autonomous Driving and Parking</h3>
             <p>
-              Built and tested localization, autonomous parking, path planning, path tracking,
-              and FSM-based decision-making modules on a real ERP42 autonomous vehicle.
+              As a member and later team leader of KAUVOY, I worked on a real ERP42 autonomous
+              vehicle platform, focusing on localization, autonomous parking, path tracking,
+              and driving decision logic.
+            </p>
+            <p>
+              I implemented Dual EKF localization using IMU, wheel encoder, and RTK-GPS
+              measurements, and developed a parking pipeline with cone perception,
+              parking-space decision, Hybrid A* path planning, and Pure Pursuit tracking.
             </p>
             <div class="tags">
               <span class="tag">Dual EKF</span>
@@ -269,14 +257,18 @@
               <span class="tag">Pure Pursuit</span>
               <span class="tag">FSM</span>
             </div>
-            <p><a href="#demos">Demo links pending</a></p>
+            <p>
+              Currently extending the system toward Vision/LiDAR-based scene perception and
+              FSM-based decision making for urban driving scenarios.
+            </p>
           </article>
 
           <article class="card">
             <h3>Machine Learning Classification and Regression Pipeline</h3>
             <p>
-              Built classification and regression pipelines using preprocessing, dimensionality
-              reduction, ensemble methods, and FCNNs for course projects.
+              Built classification and regression pipelines for Introduction to Machine Learning
+              course projects using preprocessing, dimensionality reduction, ensemble methods,
+              and fully connected neural networks.
             </p>
             <div class="tags">
               <span class="tag">scikit-learn</span>
@@ -295,21 +287,21 @@
             <div class="date">VLM / Robot</div>
             <div>
               <strong>On-device VLM Mission Execution</strong>
-              <p>Natural-language command interpretation, task planning, and robot execution. Demo link will be added after GitHub issue attachment upload.</p>
+              <p>Natural-language command interpretation, hallucination-aware task planning, and robot execution on a UGV platform.</p>
             </div>
           </div>
           <div class="row">
             <div class="date">Autonomous Driving</div>
             <div>
               <strong>Autonomous Parking Demo</strong>
-              <p>Real-vehicle parking pipeline with cone perception, Hybrid A* path planning, and Pure Pursuit path tracking.</p>
+              <p>Real-vehicle parking pipeline with cone perception, parking-space decision, Hybrid A* path planning, and Pure Pursuit path tracking.</p>
             </div>
           </div>
           <div class="row">
             <div class="date">Localization / SLAM</div>
             <div>
               <strong>EKF Localization and LIO-SAM Demo</strong>
-              <p>Multi-sensor localization and LiDAR-inertial SLAM trials. Demo links will be added after upload.</p>
+              <p>Dual EKF localization on ERP42 and LiDAR-inertial SLAM trials in outdoor driving environments.</p>
             </div>
           </div>
         </div>
@@ -322,14 +314,14 @@
             <div class="date">ICCAIS 2025</div>
             <div>
               <strong>On-Device Vision Language Model Based Natural Language Mission Execution Framework</strong>
-              <p>Co-author.</p>
+              <p>Co-author, International Conference on Control, Automation and Information Sciences.</p>
             </div>
           </div>
           <div class="row">
             <div class="date">KSAE 2025</div>
             <div>
               <strong>ROS robot_localization Dual EKF: Verification of Localization Accuracy and Application to Autonomous Driving Path Tracking</strong>
-              <p>Co-author.</p>
+              <p>Co-author, Korean Society of Automotive Engineers.</p>
             </div>
           </div>
         </div>
@@ -337,7 +329,7 @@
     </main>
 
     <footer>
-      Last updated June 2026. This page is under active maintenance as project repositories and demo videos are being organized.
+      Last updated June 2026. Project repositories and demo video links are being organized.
     </footer>
   </div>
 </body>
