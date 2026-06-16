@@ -13,148 +13,144 @@
     body {
       margin: 0;
       background: #ffffff;
-      color: #222222;
+      color: #444444;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 15px;
-      line-height: 1.62;
+      line-height: 1.55;
     }
 
     a {
-      color: #1f5f9f;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      width: min(980px, calc(100% - 36px));
-      margin: 0 auto;
-    }
-
-    .nav {
-      border-bottom: 1px solid #e6e6e6;
-      background: #ffffff;
-    }
-
-    .nav-inner {
-      min-height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-    }
-
-    .home-link {
-      color: #222222;
+      color: #174f97;
       font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      font-size: 14px;
-    }
-
-    .intro {
+    .page {
+      width: min(1270px, calc(100% - 42px));
+      margin: 0 auto;
       display: grid;
-      grid-template-columns: 230px 1fr;
-      gap: 34px;
-      padding: 38px 0 28px;
-      border-bottom: 1px solid #eeeeee;
+      grid-template-columns: 245px 1fr;
+      gap: 48px;
+      padding: 34px 0 54px;
     }
 
-    .profile {
-      text-align: left;
+    .sidebar {
+      padding-top: 10px;
     }
 
-    .photo {
-      width: 170px;
-      height: 170px;
-      border-radius: 2px;
-      border: 1px solid #dddddd;
-      background: #f4f4f4;
+    .avatar {
+      width: 176px;
+      height: 176px;
+      border-radius: 50%;
+      border: 1px solid #eeeeee;
+      background: #f7f7f7;
       color: #777777;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 42px;
+      font-size: 44px;
       font-weight: 600;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
-    h1 {
-      margin: 0 0 6px;
-      font-size: 28px;
+    .name {
+      margin: 0 0 8px;
+      font-size: 23px;
       line-height: 1.2;
-      font-weight: 600;
+      color: #555555;
+      font-weight: 700;
     }
 
-    .affiliation {
-      margin: 0 0 12px;
-      color: #444444;
-      font-size: 15px;
+    .school {
+      margin: 0 0 22px;
+      color: #555555;
     }
 
-    .profile ul {
+    .bio {
+      margin: 0 0 20px;
+      max-width: 190px;
+      color: #4f4f4f;
+    }
+
+    .profile-links {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: grid;
+      gap: 9px;
+    }
+
+    .profile-links li {
       color: #444444;
-      font-size: 14px;
     }
 
-    .profile li {
-      margin-bottom: 4px;
+    .icon {
+      display: inline-block;
+      width: 19px;
+      color: #111111;
+      font-weight: 700;
     }
 
-    .about p {
-      margin: 0 0 13px;
+    .content {
+      max-width: 985px;
     }
 
-    .cv-line {
-      margin-top: 14px;
+    .intro {
+      padding-top: 0;
+      margin-bottom: 24px;
     }
 
-    section {
-      padding: 28px 0 2px;
+    .intro p {
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+
+    strong {
+      color: #3d3d3d;
+      font-weight: 700;
     }
 
     h2 {
-      margin: 0 0 12px;
-      font-size: 23px;
-      line-height: 1.25;
-      font-weight: 600;
+      margin: 24px 0 11px;
+      padding-bottom: 8px;
       border-bottom: 1px solid #eeeeee;
-      padding-bottom: 6px;
+      color: #555555;
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: 700;
     }
 
     h3 {
-      margin: 0 0 3px;
+      margin: 0 0 4px;
       font-size: 16px;
-      font-weight: 600;
+      color: #333333;
     }
 
     ul {
-      margin-top: 0;
-      padding-left: 22px;
+      margin: 0;
+      padding-left: 26px;
     }
 
     li {
-      margin-bottom: 6px;
+      margin-bottom: 7px;
     }
 
-    .item {
+    .news-date {
+      color: #555555;
+      font-style: italic;
+      margin-right: 9px;
+    }
+
+    .project {
       display: grid;
-      grid-template-columns: 145px 1fr;
+      grid-template-columns: 155px 1fr;
       gap: 20px;
-      padding: 10px 0 15px;
-      border-bottom: 1px solid #f0f0f0;
+      padding: 14px 0 16px;
+      border-bottom: 1px solid #f1f1f1;
     }
 
-    .item:last-child {
+    .project:last-child {
       border-bottom: 0;
     }
 
@@ -165,40 +161,53 @@
 
     .desc {
       margin: 5px 0 0;
-      color: #333333;
+      color: #4a4a4a;
     }
 
     .links {
-      margin-top: 7px;
-      color: #555555;
+      margin-top: 8px;
       font-size: 14px;
+      color: #666666;
     }
 
     .pub-title {
-      font-weight: 600;
+      margin: 0;
+      font-weight: 700;
+      color: #333333;
     }
 
     .footer {
-      margin-top: 35px;
-      padding: 18px 0 30px;
+      margin-top: 30px;
+      padding-top: 15px;
       border-top: 1px solid #eeeeee;
-      color: #666666;
+      color: #777777;
       font-size: 13px;
     }
 
-    @media (max-width: 740px) {
-      .nav-inner {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 13px 0;
-      }
-
-      .intro {
+    @media (max-width: 780px) {
+      .page {
         grid-template-columns: 1fr;
-        gap: 22px;
+        gap: 20px;
       }
 
-      .item {
+      .sidebar {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 18px;
+        align-items: start;
+      }
+
+      .avatar {
+        width: 112px;
+        height: 112px;
+        font-size: 30px;
+      }
+
+      .bio {
+        max-width: none;
+      }
+
+      .project {
         grid-template-columns: 1fr;
         gap: 4px;
       }
@@ -206,166 +215,141 @@
   </style>
 </head>
 <body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a class="home-link" href="#">Homepage</a>
-      <div class="nav-links">
-        <a href="#about">About Me</a>
-        <a href="#news">News</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#education">Education</a>
+  <main class="page">
+    <aside class="sidebar">
+      <div>
+        <div class="avatar">GC</div>
+        <h1 class="name">Ghilmo Choi</h1>
+        <p class="school">Korea Aerospace University</p>
+        <p class="bio">
+          Undergraduate student in Mechanical Engineering, interested in autonomous driving,
+          robotic perception, and vision-language models.
+        </p>
       </div>
-    </div>
-  </nav>
+      <ul class="profile-links">
+        <li><span class="icon">●</span> Seoul, South Korea</li>
+        <li><span class="icon">✉</span> <a href="mailto:ggghilmo@naver.com">Email</a></li>
+        <li><span class="icon">⌘</span> <a href="https://github.com/rlfzh">Github</a></li>
+        <li><span class="icon">▣</span> <a href="assets/cv_ghilmo_choi.pdf">CV</a></li>
+      </ul>
+    </aside>
 
-  <main class="container">
-    <div class="intro" id="about">
-      <aside class="profile">
-        <div class="photo">GC</div>
-        <h1>Ghilmo Choi</h1>
-        <p class="affiliation">Korea Aerospace University</p>
-        <ul>
-          <li>B.S. student in Mechanical Engineering</li>
-          <li>Seoul, South Korea</li>
-          <li><a href="mailto:ggghilmo@naver.com">Email</a></li>
-          <li><a href="https://github.com/rlfzh">Github</a></li>
-          <li><a href="assets/cv_ghilmo_choi.pdf">CV</a></li>
-        </ul>
-      </aside>
-
-      <section class="about">
+    <div class="content">
+      <section class="intro">
         <p>
           I am an undergraduate student in Mechanical Engineering at Korea Aerospace University,
-          expected to graduate in February 2027.
+          expected to graduate in February 2027. I am currently an undergraduate researcher at
+          ASOL (Autonomous Systems and Optimization Lab), advised by <strong>Prof. Daesung Jang</strong>.
         </p>
         <p>
-          My research interests lie in autonomous driving and mobile robotics, with a primary
-          emphasis on perception-to-decision pipelines for real-world autonomous systems. I am
-          interested in developing systems that connect visual/LiDAR-based scene understanding,
-          localization, behavior planning, and control on real robotic platforms.
+          My research interests lie in <strong>autonomous driving</strong> and <strong>mobile robotics</strong>,
+          with a primary emphasis on perception-to-decision pipelines for real-world autonomous
+          systems. I am interested in developing systems that connect visual/LiDAR-based scene
+          understanding, localization, behavior planning, and control on real robotic platforms.
         </p>
         <p>
-          My recent work includes on-device vision-language-model-based robotic mission
-          execution, Dual EKF localization on an ERP42 autonomous vehicle, and real-vehicle
-          autonomous parking. Recently, I have been particularly interested in Vision-Language-Action
-          models for decision making, hallucination-aware task planning, and visual grounding for
-          autonomous driving and mobile robots.
+          My recent work includes <strong>on-device vision-language-model-based robotic mission
+          execution</strong>, <strong>Dual EKF localization</strong> on an ERP42 autonomous vehicle,
+          and <strong>real-vehicle autonomous parking</strong>. Recently, I have been particularly
+          interested in Vision-Language-Action models for decision making, hallucination-aware
+          task planning, and visual grounding for autonomous driving and mobile robots.
         </p>
-        <p class="cv-line">
+        <p>
           You can download my CV <a href="assets/cv_ghilmo_choi.pdf">here</a>.
         </p>
       </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul>
+          <li><span class="news-date">2026.06:</span> Launched this academic homepage for graduate school applications.</li>
+          <li><span class="news-date">2026:</span> Received Excellence Award at Drone X AI Marketing Challenge.</li>
+          <li><span class="news-date">2025:</span> Finalist at the College Mobility Innovation Competition.</li>
+          <li><span class="news-date">2025:</span> Co-authored papers on on-device VLM mission execution and Dual EKF localization.</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <div class="date">2025.06 - Present</div>
+          <div>
+            <h3>On-device VLM-based Robotic Mission Execution</h3>
+            <p class="desc">
+              Developed a natural-language mission execution framework that converts user commands
+              into executable robot behaviors on a Traxxas TRX-4 UGV platform. The system combines
+              an on-device VLM planner, Actor-Guard-Critic validation, RTAB-Map-based visual SLAM,
+              object detection, structured world states, and ROS2/Nav2 control.
+            </p>
+            <p class="links">
+              <a href="https://github.com/LeeSeungGyu1026/VlmRobotPlanner">Reference Code</a>
+              / Demo links will be added after upload.
+            </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="date">2024.11 - Present</div>
+          <div>
+            <h3>ERP42 Autonomous Driving and Parking</h3>
+            <p class="desc">
+              Worked on a real ERP42 autonomous vehicle platform as a member and later team leader
+              of KAUVOY. Implemented Dual EKF localization using IMU, wheel encoder, and RTK-GPS
+              measurements, and developed an autonomous parking pipeline with cone perception,
+              parking-space decision, Hybrid A* path planning, and Pure Pursuit tracking. Currently
+              leading FSM-based decision-making logic for urban driving scenarios.
+            </p>
+            <p class="links">Project code and demo links will be added after repository cleanup.</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="date">2025.08 - 2025.11</div>
+          <div>
+            <h3>Machine Learning Classification and Regression Pipeline</h3>
+            <p class="desc">
+              Built classification and regression pipelines using preprocessing, dimensionality
+              reduction, ensemble methods, and fully connected neural networks. Achieved 0.915
+              macro F1 on a 4-class imbalanced classification task.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <div class="project">
+          <div class="date">ICCAIS 2025</div>
+          <div>
+            <p class="pub-title">On-Device Vision Language Model Based Natural Language Mission Execution Framework</p>
+            <p class="desc">Co-author, International Conference on Control, Automation and Information Sciences.</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="date">KSAE 2025</div>
+          <div>
+            <p class="pub-title">ROS robot_localization Dual EKF: Verification of Localization Accuracy and Application to Autonomous Driving Path Tracking</p>
+            <p class="desc">Co-author, Korean Society of Automotive Engineers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="project">
+          <div class="date">2021.03 - 2027.02</div>
+          <div>
+            <h3>Korea Aerospace University</h3>
+            <p class="desc">B.S. in Mechanical Engineering. Overall GPA: 4.00 / 4.5, Major GPA: 4.08 / 4.5.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        Last updated June 2026.
+      </footer>
     </div>
-
-    <section id="news">
-      <h2>News</h2>
-      <ul>
-        <li><strong>2026.06:</strong> Launched this academic homepage for graduate school applications.</li>
-        <li><strong>2026:</strong> Received Excellence Award at Drone X AI Marketing Challenge.</li>
-        <li><strong>2025:</strong> Finalist at the College Mobility Innovation Competition.</li>
-        <li><strong>2025:</strong> Co-authored papers on on-device VLM mission execution and Dual EKF localization.</li>
-      </ul>
-    </section>
-
-    <section id="research">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Vision-Language-Action models for robotic and autonomous-driving decision making.</li>
-        <li>Vision/LiDAR-based scene understanding and finite-state-machine-based behavior decision.</li>
-        <li>Multi-sensor localization, visual SLAM, LiDAR SLAM, and structured world representation.</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="item">
-        <div class="date">2025.06 - Present</div>
-        <div>
-          <h3>On-device VLM-based Robotic Mission Execution</h3>
-          <p class="desc">
-            Developed a natural-language mission execution framework that converts user commands
-            into executable robot behaviors on a Traxxas TRX-4 UGV platform. The system combines
-            an on-device VLM planner, Actor-Guard-Critic validation, RTAB-Map-based visual SLAM,
-            object detection, structured world states, and ROS2/Nav2 control.
-          </p>
-          <p class="links">
-            <a href="https://github.com/LeeSeungGyu1026/VlmRobotPlanner">Reference Code</a>
-            / Demo links will be added after upload.
-          </p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="date">2024.11 - Present</div>
-        <div>
-          <h3>ERP42 Autonomous Driving and Parking</h3>
-          <p class="desc">
-            Worked on a real ERP42 autonomous vehicle platform as a member and later team leader
-            of KAUVOY. Implemented Dual EKF localization using IMU, wheel encoder, and RTK-GPS
-            measurements, and developed an autonomous parking pipeline with cone perception,
-            parking-space decision, Hybrid A* path planning, and Pure Pursuit tracking. Currently
-            leading FSM-based decision-making logic for urban driving scenarios.
-          </p>
-          <p class="links">Project code and demo links will be added after repository cleanup.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="date">2025.08 - 2025.11</div>
-        <div>
-          <h3>Machine Learning Classification and Regression Pipeline</h3>
-          <p class="desc">
-            Built classification and regression pipelines using preprocessing, dimensionality
-            reduction, ensemble methods, and fully connected neural networks. Achieved 0.915
-            macro F1 on a 4-class imbalanced classification task.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="demos">
-      <h2>Demo Videos</h2>
-      <ul>
-        <li><strong>On-device VLM Mission Execution:</strong> natural-language command interpretation, hallucination-aware task planning, and real-robot execution.</li>
-        <li><strong>ERP42 Autonomous Parking:</strong> cone perception, parking-space decision, Hybrid A* path planning, and Pure Pursuit path tracking.</li>
-        <li><strong>EKF Localization and LIO-SAM Trials:</strong> outdoor driving experiments for localization and LiDAR-inertial SLAM.</li>
-      </ul>
-    </section>
-
-    <section id="publications">
-      <h2>Publications</h2>
-      <div class="item">
-        <div class="date">ICCAIS 2025</div>
-        <div>
-          <p class="pub-title">On-Device Vision Language Model Based Natural Language Mission Execution Framework</p>
-          <p class="desc">Co-author, International Conference on Control, Automation and Information Sciences.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="date">KSAE 2025</div>
-        <div>
-          <p class="pub-title">ROS robot_localization Dual EKF: Verification of Localization Accuracy and Application to Autonomous Driving Path Tracking</p>
-          <p class="desc">Co-author, Korean Society of Automotive Engineers.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <div class="item">
-        <div class="date">2021.03 - 2027.02</div>
-        <div>
-          <h3>Korea Aerospace University</h3>
-          <p class="desc">B.S. in Mechanical Engineering. Overall GPA: 4.00 / 4.5, Major GPA: 4.08 / 4.5.</p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      Last updated June 2026.
-    </footer>
   </main>
 </body>
 </html>
