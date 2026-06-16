@@ -12,7 +12,9 @@ My interests are autonomous driving, mobile robotics, robotic perception, and vi
 
 ### On-device VLM-based Robotic Mission Execution
 
-Developed a natural-language mission execution framework that converts user commands into executable robot behaviors on a Traxxas TRX-4 UGV platform.
+Developed a natural-language mission execution framework for a small-scale UGV that converts human commands into executable robot behaviors.
+
+In this framework, an on-device VLM generates high-level plans as pseudo-function sequences such as move, pick, place, search, and return-to-base. The robot grounds these plans using RTAB-Map-based visual SLAM, object detection, and structured world-state representations.
 
 The system combines:
 
@@ -21,6 +23,8 @@ The system combines:
 - RTAB-Map-based visual SLAM
 - Object detection and structured world states
 - ROS2/Nav2 control for real-robot language-to-motion execution
+
+To reduce infeasible or hallucinated actions, I designed an Actor-Guard-Critic validation loop. The Guard filters rule-violating plans, and the Critic checks contextual consistency before execution or replanning. This work was accepted to ICCAIS 2025.
 
 Reference code from the joint project:
 
@@ -37,6 +41,10 @@ Main components:
 - Hybrid A* path planning under nonholonomic vehicle constraints
 - Pure Pursuit-based path tracking
 - FSM-based decision-making logic for urban driving scenarios
+
+For localization, I implemented a Dual EKF architecture using ROS robot_localization. A local EKF estimates short-term relative motion from IMU and wheel encoder measurements, while a global EKF incorporates RTK-GPS to correct long-term drift and provide a stable global pose for autonomous driving.
+
+The localization system was evaluated on outdoor vehicle tests and reported in a KSAE 2025 paper, achieving ATE (RMS) of 0.073 m on a one-lap run and 0.146 m after three laps.
 
 Project code and demo links will be added after repository cleanup.
 

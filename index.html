@@ -276,10 +276,19 @@
           <div>
             <h3>On-device VLM-based Robotic Mission Execution</h3>
             <p class="desc">
-              Developed a natural-language mission execution framework that converts user commands
-              into executable robot behaviors on a Traxxas TRX-4 UGV platform. The system combines
-              an on-device VLM planner, Actor-Guard-Critic validation, RTAB-Map-based visual SLAM,
-              object detection, structured world states, and ROS2/Nav2 control.
+              Developed a natural-language mission execution framework for a small-scale UGV that
+              converts human commands into executable robot behaviors. In this framework, an
+              on-device VLM generates high-level plans as pseudo-function sequences such as
+              move, pick, place, search, and return-to-base, while the robot grounds these plans
+              using RTAB-Map-based visual SLAM, object detection, and structured world-state
+              representations.
+            </p>
+            <p class="desc">
+              To reduce infeasible or hallucinated actions, designed an Actor-Guard-Critic
+              validation loop: the Guard first filters rule-violating plans, and the Critic checks
+              contextual consistency before execution or replanning. The validated plan is then
+              connected to ROS2/Nav2-based motion execution on a Traxxas TRX-4 UGV platform. This
+              work was accepted to ICCAIS 2025.
             </p>
             <p class="links">
               <a href="https://github.com/LeeSeungGyu1026/VlmRobotPlanner">Reference Code</a>
@@ -294,10 +303,18 @@
             <h3>ERP42 Autonomous Driving and Parking</h3>
             <p class="desc">
               Worked on a real ERP42 autonomous vehicle platform as a member and later team leader
-              of KAUVOY. Implemented Dual EKF localization using IMU, wheel encoder, and RTK-GPS
-              measurements, and developed an autonomous parking pipeline with cone perception,
-              parking-space decision, Hybrid A* path planning, and Pure Pursuit tracking. Currently
-              leading FSM-based decision-making logic for urban driving scenarios.
+              of KAUVOY. For localization, implemented a Dual EKF architecture using ROS
+              robot_localization: a local EKF estimates short-term relative motion from IMU and
+              wheel encoder measurements, while a global EKF incorporates RTK-GPS to correct
+              long-term drift and provide a stable global pose for autonomous driving.
+            </p>
+            <p class="desc">
+              The localization system was evaluated on outdoor vehicle tests and reported in a
+              KSAE 2025 paper, achieving ATE (RMS) of 0.073 m on a one-lap run and 0.146 m after
+              three laps. Based on this pose estimate, developed an autonomous parking pipeline
+              covering cone perception, parking-space decision, Hybrid A* path planning, and Pure
+              Pursuit tracking. Currently leading FSM-based decision-making logic for urban driving
+              scenarios.
             </p>
             <p class="links">Project code and demo links will be added after repository cleanup.</p>
           </div>
