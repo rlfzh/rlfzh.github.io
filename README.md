@@ -8,13 +8,6 @@ My interests are autonomous driving, mobile robotics, robotic perception, and vi
 - CV: <https://rlfzh.github.io/assets/cv_ghilmo_choi.pdf>
 - Email: <ggghilmo@naver.com>
 
-## Awards
-
-- 5th Place, Airbus 101 (2026)
-- Excellence Award, Drone X AI Marketing Challenge (2026)
-- Finalist, F-16 AI Pilot Competition (2025)
-- Finalist, College Mobility Innovation Competition (2025)
-
 ## Selected Projects
 
 ### On-device VLM-based Robotic Mission Execution
@@ -86,6 +79,12 @@ Result:
 
 - Co-author, "On-Device Vision Language Model Based Natural Language Mission Execution Framework," ICCAIS 2025.
 - Co-author, "ROS robot_localization Dual EKF: Verification of Localization Accuracy and Application to Autonomous Driving Path Tracking," KSAE 2025.
+
+## Awards
+
+- 5th Place, Airbus 101 (2026)
+- Excellence Award, Drone X AI Marketing Challenge (2026)
+- Finalist, College Mobility Innovation Competition (2025)
 
 ## Demo Links
 
