@@ -8,6 +8,12 @@ My interests are autonomous driving, mobile robotics, robotic perception, and vi
 - CV: <https://rlfzh.github.io/assets/cv_ghilmo_choi.pdf>
 - Email: <ggghilmo@naver.com>
 
+## Awards
+
+- 5th Place, Airbus 101 (2026)
+- Excellence Award, Drone X AI Marketing Challenge (2026)
+- Finalist, College Mobility Innovation Competition (2025)
+
 ## Selected Projects
 
 ### On-device VLM-based Robotic Mission Execution
