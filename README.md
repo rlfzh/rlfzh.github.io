@@ -30,6 +30,11 @@ Reference code from the joint project:
 
 - <https://github.com/LeeSeungGyu1026/VlmRobotPlanner>
 
+Demo/results:
+
+- RTAB-Map PWM test image 1: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test.jpg>
+- RTAB-Map PWM test image 2: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test2.png>
+
 ### ERP42 Autonomous Driving and Parking
 
 Worked on a real ERP42 autonomous vehicle platform as a member and later team leader of KAUVOY.
@@ -46,7 +51,13 @@ For localization, I implemented a Dual EKF architecture using ROS robot_localiza
 
 The localization system was evaluated on outdoor vehicle tests and reported in a KSAE 2025 paper, achieving ATE (RMS) of 0.073 m on a one-lap run and 0.146 m after three laps.
 
-Project code and demo links will be added after repository cleanup.
+Demo/results:
+
+- EKF localization result: <https://rlfzh.github.io/assets/media/ekf_localization.png>
+- LIO-SAM campus demo: <https://rlfzh.github.io/assets/media/liosam_campus_demo.mp4>
+- Autonomous parking demo: <https://rlfzh.github.io/assets/media/autonomous_parking_demo.mp4>
+
+Project code will be added after repository cleanup.
 
 ### Machine Learning Classification and Regression Pipeline
 
@@ -69,19 +80,10 @@ Result:
 - Co-author, "On-Device Vision Language Model Based Natural Language Mission Execution Framework," ICCAIS 2025.
 - Co-author, "ROS robot_localization Dual EKF: Verification of Localization Accuracy and Application to Autonomous Driving Path Tracking," KSAE 2025.
 
-## Demo Upload Workflow
+## Demo Links
 
-GitHub issue attachments are created through the GitHub web UI.
-
-1. Create an issue in this repository named `Demo video attachments`.
-2. Drag each local demo file into the issue comment box.
-3. Copy the generated Markdown links.
-4. Replace the placeholder links in `demo-links.md` and `index.html`.
-
-Local demo files to upload:
-
-- `EKF_Localization.png`
-- `LIO-SAM campus demo video`
-- `Rtabmap_pwm_test.jpg`
-- `Rtabmap_pwm_test2.png`
-- `Autonomous diagonal parking demo video`
+- EKF localization result: <https://rlfzh.github.io/assets/media/ekf_localization.png>
+- LIO-SAM campus demo: <https://rlfzh.github.io/assets/media/liosam_campus_demo.mp4>
+- RTAB-Map PWM test image 1: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test.jpg>
+- RTAB-Map PWM test image 2: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test2.png>
+- Autonomous parking demo: <https://rlfzh.github.io/assets/media/autonomous_parking_demo.mp4>
