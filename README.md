@@ -12,6 +12,7 @@ My interests are autonomous driving, mobile robotics, robotic perception, and vi
 
 - 5th Place, Airbus 101 (2026)
 - Excellence Award, Drone X AI Marketing Challenge (2026)
+- Finalist, F-16 AI Pilot Competition (2025)
 - Finalist, College Mobility Innovation Competition (2025)
 
 ## Selected Projects
