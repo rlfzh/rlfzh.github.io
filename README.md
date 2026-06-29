@@ -35,8 +35,8 @@ Reference code from the joint project:
 
 Demo/results:
 
-- RTAB-Map PWM test image 1: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test.jpg>
-- RTAB-Map PWM test image 2: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test2.png>
+- VlmRobotPlanner image 1: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test.jpg>
+- VlmRobotPlanner image 2: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test2.png>
 
 ### ERP42 Autonomous Driving and Parking
 
@@ -93,6 +93,6 @@ Result:
 
 - EKF localization result: <https://rlfzh.github.io/assets/media/ekf_localization.png>
 - LIO-SAM campus demo: <https://rlfzh.github.io/assets/media/liosam_campus_demo.mp4>
-- RTAB-Map PWM test image 1: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test.jpg>
-- RTAB-Map PWM test image 2: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test2.png>
+- VlmRobotPlanner image 1: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test.jpg>
+- VlmRobotPlanner image 2: <https://rlfzh.github.io/assets/media/rtabmap_pwm_test2.png>
 - Autonomous parking demo: <https://rlfzh.github.io/assets/media/autonomous_parking_demo.mp4>
