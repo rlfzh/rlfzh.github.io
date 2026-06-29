@@ -167,6 +167,13 @@
       color: #666666;
     }
 
+    .demo-video {
+      width: 100%;
+      max-width: 720px;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+
     .pub-title {
       margin: 0;
       font-weight: 700;
@@ -226,7 +233,7 @@
       <ul class="profile-links">
         <li><span class="icon">●</span> Seoul, South Korea</li>
         <li><span class="icon">✉</span> <a href="mailto:ggghilmo@naver.com">Email</a></li>
-        <li><span class="icon">⌘</span> <a href="https://github.com/rlfzh">Github</a></li>
+        <li><span class="icon">⌘</span> <a href="https://github.com/rlfzh">GitHub</a></li>
         <li><span class="icon">▣</span> <a href="assets/cv_ghilmo_choi.pdf">CV</a></li>
       </ul>
     </aside>
@@ -235,8 +242,9 @@
       <section class="intro">
         <p>
           I am an undergraduate student in Mechanical Engineering at Korea Aerospace University,
-          expected to graduate in February 2027. I am currently an undergraduate researcher at
-          ASOL (Autonomous Systems and Optimization Lab) since June 2025, advised by <strong>Prof. Daesung Jang</strong>.
+          expected to graduate in February 2027. I have been an undergraduate researcher at
+          ASOL (Autonomous Systems and Optimization Lab) since June 2025, advised by
+          <strong>Prof. Daesung Jang</strong>.
         </p>
         <p>
           My research interests lie in <strong>autonomous driving</strong> and <strong>mobile robotics</strong>,
@@ -246,8 +254,10 @@
         </p>
         <p>
           My recent work includes <strong>on-device vision-language-model-based robotic mission
-          execution</strong>. Recently, I have been particularly interested in Vision-Language-Action models 
-          for decision making, hallucination-aware task planning, and visual grounding for autonomous driving and mobile robots.
+          execution</strong>, <strong>Dual EKF localization</strong> on an ERP42 autonomous vehicle,
+          and <strong>real-vehicle autonomous parking</strong>. I am particularly interested in
+          Vision-Language-Action models for decision making, hallucination-aware
+          task planning, and visual grounding for autonomous driving and mobile robots.
         </p>
         <p>
           You can download my CV <a href="assets/cv_ghilmo_choi.pdf">here</a>.
@@ -258,7 +268,7 @@
         <h2>Research Interests</h2>
         <ul>
           <li>On-device vision-language models for natural-language robotic mission execution.</li>
-          <li>Perception, prediction, and decision making for autonomous driving.</li>
+          <li>Perception, localization, planning, and decision making for autonomous driving.</li>
           <li>Motion planning and path tracking for real-vehicle autonomous driving.</li>
         </ul>
       </section>
@@ -270,8 +280,9 @@
           <div>
             <h3>On-device VLM-based Robotic Mission Execution</h3>
             <p class="desc">
-              Developed a natural-language mission execution framework for a small-scale UGV that
-              converts human commands into executable robot behaviors. In this framework, an
+              Developed a natural-language mission execution framework for a ROS2-based Traxxas
+              TRX-4 UGV platform that converts human commands into executable robot behaviors.
+              In this framework, an
               on-device VLM generates high-level plans as pseudo-function sequences such as
               move, pick, place, search, and return-to-base, while the robot grounds these plans
               using RTAB-Map-based visual SLAM, object detection, and structured world-state
@@ -305,7 +316,7 @@
             </p>
             <p class="desc">
               The localization system was evaluated on outdoor vehicle tests, achieving ATE (RMS) of 0.073 m 
-              on a one-lap run and 0.146 m afterthree laps. Based on this pose estimate, developed an autonomous 
+              on a one-lap run and 0.146 m after three laps. Based on this pose estimate, developed an autonomous 
               parking pipeline covering cone perception, parking-space decision, Hybrid A* path planning, and Pure
               Pursuit tracking. Currently leading FSM-based decision-making logic for urban driving scenarios.
             </p>
@@ -334,9 +345,19 @@
         <h2>Demo Videos and Results</h2>
         <ul>
           <li><strong>EKF localization result:</strong> <a href="assets/media/ekf_localization.png">trajectory/result image</a></li>
-          <li><strong>LIO-SAM campus demo:</strong> <a href="assets/media/liosam_campus_demo.mp4">mp4 video</a></li>
+          <li>
+            <strong>LIO-SAM campus demo:</strong> <a href="assets/media/liosam_campus_demo.mp4">mp4 video</a>
+            <video controls class="demo-video">
+              <source src="assets/media/liosam_campus_demo.mp4" type="video/mp4">
+            </video>
+          </li>
           <li><strong>RTAB-Map PWM test:</strong> <a href="assets/media/rtabmap_pwm_test.jpg">image 1</a>, <a href="assets/media/rtabmap_pwm_test2.png">image 2</a></li>
-          <li><strong>Autonomous parking demo:</strong> <a href="assets/media/autonomous_parking_demo.mp4">mp4 video</a></li>
+          <li>
+            <strong>Autonomous parking demo:</strong> <a href="assets/media/autonomous_parking_demo.mp4">mp4 video</a>
+            <video controls class="demo-video">
+              <source src="assets/media/autonomous_parking_demo.mp4" type="video/mp4">
+            </video>
+          </li>
         </ul>
       </section>
 
@@ -345,7 +366,7 @@
         <div class="project">
           <div class="date">ICCAIS 2025</div>
           <div>
-            <p class="pub-title">On-Device Vision Language Model Based Natural Language Mission Execution Framework</p>
+            <p class="pub-title"><em>On-Device Vision Language Model Based Natural Language Mission Execution Framework</em></p>
             <p class="desc">Co-author, International Conference on Control, Automation and Information Sciences.</p>
           </div>
         </div>
@@ -353,7 +374,7 @@
         <div class="project">
           <div class="date">KSAE 2025</div>
           <div>
-            <p class="pub-title">ROS robot_localization Dual EKF: Verification of Localization Accuracy and Application to Autonomous Driving Path Tracking</p>
+            <p class="pub-title"><em>ROS robot_localization Dual EKF: Verification of Localization Accuracy and Application to Autonomous Driving Path Tracking</em></p>
             <p class="desc">Co-author, Korean Society of Automotive Engineers.</p>
           </div>
         </div>
@@ -362,16 +383,16 @@
       <section id="awards">
         <h2>Awards</h2>
         <ul>
-          <li><strong>2026:</strong> 5th Place, Airbus 101.</li>
-          <li><strong>2026:</strong> Excellence Award, Drone X AI Marketing Challenge.</li>
-          <li><strong>2025:</strong> Finalist, College Mobility Innovation Competition.</li>
+          <li><strong>2026</strong> - Airbus 101 Competition (5th Place).</li>
+          <li><strong>2026</strong> - Drone X AI Marketing Challenge (Excellence Award).</li>
+          <li><strong>2025</strong> - College Mobility Innovation Competition (Finalist).</li>
         </ul>
       </section>
 
       <section id="education">
         <h2>Education</h2>
         <div class="project">
-          <div class="date">2021.03 - 2027.02</div>
+          <div class="date">2021.03 - 2027.02 (Expected)</div>
           <div>
             <h3>Korea Aerospace University</h3>
             <p class="desc">B.S. in Mechanical Engineering. Overall GPA: 4.08 / 4.5, Major GPA: 4.18 / 4.5.</p>
@@ -380,7 +401,7 @@
       </section>
 
       <footer class="footer">
-        Last updated June 2026.
+        Last updated: June 2026
       </footer>
     </div>
   </main>
