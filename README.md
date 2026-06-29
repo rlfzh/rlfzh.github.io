@@ -12,7 +12,7 @@ My interests are autonomous driving, mobile robotics, robotic perception, and vi
 
 ### On-device VLM-based Robotic Mission Execution
 
-Developed a natural-language mission execution framework for a small-scale UGV that converts human commands into executable robot behaviors.
+Developed a natural-language mission execution framework for a ROS2-based UGV platform that converts human commands into executable robot behaviors.
 
 In this framework, an on-device VLM generates high-level plans as pseudo-function sequences such as move, pick, place, search, and return-to-base. The robot grounds these plans using RTAB-Map-based visual SLAM, object detection, and structured world-state representations.
 
@@ -23,8 +23,11 @@ The system combines:
 - RTAB-Map-based visual SLAM
 - Object detection and structured world states
 - ROS2/Nav2 control for real-robot language-to-motion execution
+- AirSim-based object detection, 3D reconstruction, and path generation
 
-To reduce infeasible or hallucinated actions, I designed an Actor-Guard-Critic validation loop. The Guard filters rule-violating plans, and the Critic checks contextual consistency before execution or replanning. This work was accepted to ICCAIS 2025.
+To reduce infeasible or hallucinated actions, I designed an Actor-Guard-Critic validation loop. The Guard filters rule-violating plans, and the Critic checks contextual consistency before execution or replanning. The validated plan is then connected to ROS2/Nav2-based motion execution on a UGV platform. This work was accepted to ICCAIS 2025.
+
+Currently extending the framework with AirSim-based perception and planning by applying YOLOE, NanoOWL, and Grounding DINO for object detection on AirSim data, using NVBlox for 3D reconstruction, and generating paths with the OMPL library.
 
 Reference code from the joint project:
 

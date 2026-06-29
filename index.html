@@ -292,7 +292,12 @@
               To reduce infeasible or hallucinated actions, designed an Actor-Guard-Critic
               validation loop: the Guard first filters rule-violating plans, and the Critic checks
               contextual consistency before execution or replanning. The validated plan is then
-              connected to ROS2/Nav2-based motion execution on a Traxxas TRX-4 UGV platform.
+              connected to ROS2/Nav2-based motion execution on a UGV platform.
+            </p>
+            <p class="desc">
+              Currently extending the framework with AirSim-based perception and planning:
+              applying YOLOE, NanoOWL, and Grounding DINO for object detection on AirSim data,
+              using NVBlox for 3D reconstruction, and generating paths with the OMPL library.
             </p>
             <p class="links">
               <a href="https://github.com/LeeSeungGyu1026/VlmRobotPlanner">Reference Code</a>
