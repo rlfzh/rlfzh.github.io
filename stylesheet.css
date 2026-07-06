@@ -170,9 +170,9 @@ section + section {
 .profile-img {
   width: 100%;
   max-width: 240px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 58%;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 6px 18px rgba(0, 0, 0, 0.05);
 }
