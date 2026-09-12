@@ -303,6 +303,7 @@ section + section {
 }
 
 .thumb-stack {
+  display: block;
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -312,6 +313,16 @@ section + section {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
+.poster-preview {
+  aspect-ratio: 1684 / 2384;
+  background: #ffffff;
+  border: 1px solid var(--rule);
+}
+
+.poster-preview:hover {
+  border-color: var(--accent);
+}
+
 .thumb-stack img,
 .thumb-stack video {
   position: absolute;
@@ -319,6 +330,10 @@ section + section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.poster-preview img {
+  object-fit: contain;
 }
 
 .thumb-video {
